@@ -27,14 +27,14 @@ This part of the project uses Linux to:
         # Create nested directories for the MP3 library
 mkdir -p ~/ESL_website/mp3_library/{business_english,tech_english,tourism_english}
 
-# Create admin team group and add collaborators
+Create admin team group and add collaborators
 sudo groupadd adminteam
 sudo usermod -aG adminteam fatima
 
-# Change ownership of the library to user and group
+Change ownership of the library to user and group
 sudo chown gary:adminteam mp3_library
 
-# Set permissions: full for owner, read/write for group, read-only for others
+Set permissions: for owner, read/write for group, and read-only for others
 chmod 764 mp3_library
 
 Why This Matters
